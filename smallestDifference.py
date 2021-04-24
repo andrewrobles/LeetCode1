@@ -2,6 +2,7 @@ def smallestDifference(arrayOne, arrayTwo):
 	
     arrayOne.sort()
 	arrayTwo.sort()
+    
 	idxOne = 0
 	idxTwo = 0
 	smallest = float("inf")
