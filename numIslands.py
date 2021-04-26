@@ -13,7 +13,7 @@ def countIslands(self, grid):
     return count
     
 def bfs(grid, i, j):
-    if i < 0 or i >= len(grid) or j < 0 or j >= len(grid[i]) or grid[i][j] == 0:
+    if isInvalidIndex(grid, i, j):
         return
 
     grid[i][j] = 0
@@ -22,3 +22,6 @@ def bfs(grid, i, j):
     bfs(grid, i-1, j)
     bfs(grid, i, j-1)
     bfs(grid, i, j+1)
+
+def isInvalidIndex(grid, i, j):
+    return i < 0 or i >= len(grid) or j < 0 or j >= len(grid[i]) or grid[i][j] == 0
