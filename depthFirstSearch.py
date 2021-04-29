@@ -1,19 +1,19 @@
-def breadthFirstSearch(graph, node):
+def depthFirstSearch(graph, node):
     visited = []
-    queue = []
+    stack = []
 
     visited.append(node)
-    queue.append(node)
+    stack.append(node)
     
-    while queue:
-        curr = queue.pop(0)
+    while stack:
+        curr = stack.pop()
         print(curr)
 
         for child in graph[curr]:
 
             if child not in visited:
                 visited.append(child)
-                queue.append(child) 
+                stack.append(child) 
 
 graph = {
   'A' : ['B','C'],
@@ -24,4 +24,4 @@ graph = {
   'F' : []
 }
 
-breadthFirstSearch(graph, 'A')
+depthFirstSearch(graph, 'A')
