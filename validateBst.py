@@ -4,6 +4,7 @@ def validateBst(tree):
 def validateBstHelper(node, minVal, maxVal):
 	if not node:
 		return True
+		
 	if not node.value >= minVal or not node.value < maxVal:
 		return False
 	
