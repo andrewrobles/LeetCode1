@@ -8,6 +8,6 @@ def removeDuplicatesFromLinkedList(linkedList):
             next = next.next
 		
         curr.next = next
-    curr = next
+        curr = next
 	
     return linkedList
