@@ -1,4 +1,8 @@
 def getNthFib(n):
+	"""
+	Write a function that returns the 
+	nth Fibonacci number
+	"""
 	if n == 2:
 		return 1
 	elif n == 1:

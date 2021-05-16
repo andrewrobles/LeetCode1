@@ -1,4 +1,8 @@
 def isValidSubsequence(array, sequence):
+    """
+    Write a function that determines whether the
+    second array is a subsequence of the first
+    """
     arrayIndex = 0
     sequenceIndex = 0
 

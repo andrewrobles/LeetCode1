@@ -1,4 +1,8 @@
 def nodeDepths(root, depth=0):
+    """
+    Write a function that returns the sum of
+    it's node's depths
+    """
     if root is None:
         return 0
 
