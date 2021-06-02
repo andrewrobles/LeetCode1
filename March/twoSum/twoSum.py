@@ -1,12 +1,12 @@
-def twoSum(nums, target):
-    comps = {}
-    
-    for i in range(len(nums)):
-        currNum = nums[i]
-        
-        diff = target - currNum
-        
-        if currNum in comps:
-            return [comps[currNum], i]
-        
-        comps[diff] = i
+def twoNumberSum(array, targetSum):
+	nums = set()
+	
+	for curr in array:
+		potentialMatch = targetSum - curr
+		
+		if potentialMatch in nums:
+			return [potentialMatch, curr]
+		else:
+			nums.add(curr)
+			
+	return []
