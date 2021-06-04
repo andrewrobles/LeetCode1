@@ -27,6 +27,14 @@ class TestSolution(unittest.TestCase):
         expected = ""
         
         self.assertEqual(expected, actual)
+    
+    def testDiffLengths(self):
+        strings = ["ab", "a"]
+
+        actual = longestCommonPrefix(strings)
+        expected = "a"
+        
+        self.assertEqual(expected, actual)
 
 if __name__ == '__main__':
     unittest.main()
