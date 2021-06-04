@@ -19,6 +19,14 @@ class TestSolution(unittest.TestCase):
         expected = ""
         
         self.assertEqual(expected, actual)
+    
+    def testEmpty(self):
+        strings = [""]
+
+        actual = longestCommonPrefix(strings)
+        expected = ""
+        
+        self.assertEqual(expected, actual)
 
 if __name__ == '__main__':
     unittest.main()
