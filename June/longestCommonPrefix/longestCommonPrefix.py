@@ -1,7 +1,7 @@
 def longestCommonPrefix(strs):
     prefix = ""
 
-    for i in range(len(strs)):
+    for i in range(len(strs[0])):
         if len(strs[0]) == 0:
             return prefix
 
