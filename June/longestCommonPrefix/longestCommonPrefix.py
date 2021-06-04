@@ -3,14 +3,14 @@ def longestCommonPrefix(strs):
 
     for i in range(len(strs)):
         if len(strs[0]) == 0:
-            return ""
-            
+            return prefix
+
         currChar = strs[0][i] 
 
         isMatch = True
 
         for currString in strs:
-            if currString[i] != currChar:
+            if i >= len(currString) or currString[i] != currChar:
                 isMatch = False
         
         if isMatch:
