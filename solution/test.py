@@ -1,11 +1,12 @@
 import unittest
 
+from solution import solution
+
 class TestSolution(unittest.TestCase):
 
     def testHello(self):
-
         expected = 'Hello world'
-        actual = 'Hello world'
+        actual = solution()
 
         self.assertEqual(expected, actual)
 
