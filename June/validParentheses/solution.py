@@ -13,14 +13,10 @@ def solution(s):
             stack.append(currBracket)
 
         else:
-            # Compare stack braket to currrent
+            # Compare stack bracket to current
             stackBracket = stack.pop()
             if matches[stackBracket] != currBracket:
                 return False
-    
-    return True
 
-
-
-
-
+    # Empty stack 
+    return not stack

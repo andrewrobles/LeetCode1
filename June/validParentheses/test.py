@@ -39,5 +39,12 @@ class TestSolution(unittest.TestCase):
 
         self.assertEqual(expected, actual)
 
+    def test5(self):
+        s = "["
+        expected = False
+        actual = solution(s)
+
+        self.assertEqual(expected, actual)
+
 if __name__ == '__main__':
     unittest.main()
