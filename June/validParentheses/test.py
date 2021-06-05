@@ -39,8 +39,15 @@ class TestSolution(unittest.TestCase):
 
         self.assertEqual(expected, actual)
 
-    def test5(self):
+    def test6(self):
         s = "["
+        expected = False
+        actual = solution(s)
+
+        self.assertEqual(expected, actual)
+
+    def test7(self):
+        s = "]"
         expected = False
         actual = solution(s)
 
