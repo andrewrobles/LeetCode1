@@ -12,11 +12,15 @@ def solution(s):
         if currBracket in matches:
             stack.append(currBracket)
 
-        else:
-            # Compare stack bracket to current
+        # If closed compare stack to current
+        elif stack:
             stackBracket = stack.pop()
             if matches[stackBracket] != currBracket:
                 return False
+        
+        else:
+            # When closed bracket and empty stack
+            return False
 
     # Empty stack 
     return not stack
